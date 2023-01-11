@@ -1,0 +1,257 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@200&family=Rubik+Vinyl&family=Sofia+Sans+Condensed&family=Yeon+Sung&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: 'Nunito', sans-serif;
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    /* background-color: #434046; */
+    background-image: linear-gradient(90deg, #1f1f1f,#23093d);
+}
+
+a {
+    text-decoration: none;
+    color: white;   /*#333 = siyah*/
+}
+
+header {
+    width: 100%;
+    min-height: 60px;
+    padding: 0 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: black;
+    color: white;
+    font-size: 1.4rem;
+    border-bottom: 1px solid #23ff70;
+}
+
+header nav a {
+    margin-right: 20px;
+}
+
+header nav a:hover {
+    color:#23ff70;
+}
+
+/* search area*/
+
+#search-area {
+    display: flex;
+    flex-direction: column;
+}
+
+#search-form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 110px;
+    padding-top: 4rem;
+}
+
+form h3 {
+    font-size: 1.5rem;
+    margin-bottom: 1.2rem;
+    color: white;
+}
+
+#email {
+    padding: 10px 20px;
+    font-size: 1.2rem;
+    border: none;
+    border-radius: 10px;
+    margin-bottom: 1.2rem;
+}
+
+#email:focus, #email:active {
+    outline: none;
+}
+
+#btn-submit {
+    margin: 10px 0;
+}
+
+/* Information Section */
+
+#features {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    padding: 2rem 0;
+}
+
+#features .feature-box {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    border: 1.5px solid #23ff70;
+    width: 400px;
+    padding: 20px;
+    margin: 20px 0;
+    color: white;
+    border-radius: 1.5rem;
+    background-color: #06020a;
+}
+
+.features-heading {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+.features-heading h3 {
+    color: #b7a4fc;
+}
+
+.fa-fire {
+    margin-right: 10px;
+    font-size: 1.2rem;
+    color: #1ed760;
+}
+.fa-truck {
+    margin-right: 10px;
+    font-size: 1.2rem;
+    color: #1ed760;
+}
+.fa-battery-full {
+    margin-right: 10px;
+    font-size: 1.2rem;
+    color: #1ed760;
+}
+
+#how-it-works {
+    width: 100%;
+}
+
+iframe {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 800px;
+    height: 500px;
+    margin: 20px auto;
+    border: 1px solid #23ff70;
+}
+
+/* Pricing Section - 12.12.18 */
+
+#pricing {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    padding: 2rem 0;
+}
+
+.price-box {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    border: 1.5px solid #23ff70;
+    width: 400px;
+    padding: 20px;
+    margin: 20px 0;
+    color: white;
+    border-radius: 1.5rem;
+    background-color: #06020a;
+}
+
+.price-box-heading {
+    font-size: 25px;
+    margin-bottom: 15px;
+    color:#b7a4fc;
+}
+
+.price-box-body h3 {
+    font-size: 25px;
+    margin-bottom: 10px;
+    color: yellow;
+}
+
+.price-box-body p {
+    font-size: 1.2rem;
+    margin: 10px 0;
+}
+
+.btn-select {
+    padding: 10px 20px;
+    font-size: 1.2rem;
+    color: white;
+    background-color: #1ed760;
+    border-radius: 1rem;
+    cursor: pointer;
+    border: none;
+}
+
+.btn-select:hover {
+    background-color: #23ff70;
+    color: white;
+}
+
+footer {
+    display: flex;
+    flex-direction: column;
+    background-color: black;
+    color: white;
+}
+
+.footer-nav {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 10px 0;
+    border-top: 1px solid #23ff70;
+}
+
+.footer-nav-links a {
+    margin: 0 10px;
+}
+
+.copyright {
+    margin-top: 10px;
+}
+
+@media (min-width: 1000px) {
+    #features {
+        flex-direction: row;
+    }
+    #features .feature-box {
+        margin: 30px 15px;
+    }
+
+    #pricing {
+        flex-direction: row;
+    }
+    .price-box {
+        margin: 30px 15px;
+    }
+
+    iframe {
+        width: 850px;
+        height: 550px;
+    }
+}
